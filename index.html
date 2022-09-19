@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApps'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/footer_css.css">
+    <link rel="stylesheet" href="./assets/css/contact_css.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/sadadd.css">
+    <link rel="stylesheet" href="./assets/css/aboutus.css">
+    <link rel="stylesheet" href="./assets/css/grit.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/style-product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/495c8b4cb1.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./assets/css/FAQ.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+<script>
+    expireDate = new Date
+    expireDate.setMonth(expireDate.getMonth() + 6)
+    jcount = eval(cookieVal("jaafarCounter"))
+    jcount++
+    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
+    function cookieVal(cookieName) {
+        thisCookie = document.cookie.split("; ")
+        for (i = 0; i < thisCookie.length; i++) {
+            if (cookieName == thisCookie[i].split("=")[0]) {
+                return thisCookie[i].split("=")[1]
+            }
+        }
+        return 0
+    }
+
+    function page_counter() {
+        for (i = 0; i < (6 - jcount.toString().length); i++)
+            document.write('<span class="counter">0</span>')
+        for (y = 0; y < (jcount.toString().length); y++)
+            document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<body>
+    <div id="preloader"></div>
+
+    <!--Nav Begin-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid container-fluid-nav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#!/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#!vehice">Vehicle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#!gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!blog">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/about-us">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#!/contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#!/faq">FAQ</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="MyInput" class="form-control me-2" type="text" placeholder="Search Car Name" aria-label="Search">
+                    <button id="submit-filter" class="btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logo-car/image.png" alt="logo" width="150px" height="50px">
+                <b class="view">Views :
+                    <SCRIPT>page_counter(jcount);</SCRIPT>
+                </b>
+            </a>
+
+        </div>
+    </nav>
+
+    <!--nav end-->
+
+    <div ng-view></div>
+
+
+    <footer>
+        <div class="bocanh"></div>
+        <div class="footer">
+            <div class="footer_text_bg">
+                <div class="footer_text">
+                    <div class="container-fluid">
+                        <div class="row height-footer">
+                            <div class="logo">
+                                <div class="logo-img">
+                                    <img src="./assets/img/logo-car/image.png" alt="" height="100px" width="250px" style="border-bottom:1px #ccc solid ;">
+                                </div>
+                            </div>
+
+                            <div class="footer-contact">
+                                <!-- infor contact -->
+                                <div class="container container-bgr-ft">
+                                    <div class="row row-footer">
+                                        <div class="col-5">
+                                            <div class="infor-contact">
+                                                <ul class="infor-style">
+                                                    <li>
+                                                        <h7><i class="fa-solid fa-location-dot"></i>8A - Ton That Thuyet Street - Bac Tu Liem - Ha Noi City</h7>
+                                                    </li>
+                                                    <li>
+                                                        <p><span style="opacity: 0.5 ;"><i style="margin-right: 5px;"
+                                                                    class="fa-solid fa-clock"></i></span> Mon – Fri :: 9am – 6pm
+                                                        </p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p><span style="opacity: 0.5 ;"><i style="margin-right: 5px;"
+                                                                    class="fa-solid fa-fax"></i></span>+1 (234) 567 8998
+                                                        </p>
+                                                    </li>
+
+                                                    <li>
+                                                        <a style="text-decoration: none; color:#fff" href="mailto:Carbreezy@gmail.com">
+                                                            <p><span style="opacity: 0.5 ;"><i
+                                                                        style="margin-right: 5px;"
+                                                                        class="fa-solid fa-envelope"></i></span> Carbreezy@gmail.com
+                                                            </p>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a style="text-decoration: none; color:#fff" href="tel:0988888888">
+                                                            <p><span style="opacity: 0.5 ;"><i
+                                                                        style="margin-right: 5px;"
+                                                                        class="fa-solid fa-phone"></i></span> 0988888888
+                                                            </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-5">
+                                            <div class="container">
+                                                <div class="row row-footer">
+                                                    <div class="col-4">
+                                                        <h5 class="side-map_title">Information</h5>
+                                                        <ul class="side-map_about">
+                                                            <li><a href="#!contact"><i
+                                                                        class="fa-solid fa-caret-right"></i>Contact</a>
+                                                            </li>
+                                                            <li><a href="#!about-us"><i
+                                                                        class="fa-solid fa-caret-right"></i>About Us</a>
+                                                            </li>
+                                                            <li><a href="#!blog"><i
+                                                                        class="fa-solid fa-caret-right"></i>Blog</a>
+                                                            </li>
+                                                            <li><a href="#!faq"><i
+                                                                        class="fa-solid fa-caret-right"></i>FAQ</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h5 class="side-map_title">Vehicle</h5>
+                                                        <ul class="side-map_about">
+                                                            <li><a href="#!new-car"><i
+                                                                        class="fa-solid fa-caret-right"></i>New</a></li>
+                                                            <li><a href="#!used-car"><i
+                                                                        class="fa-solid fa-caret-right"></i>Used</a>
+                                                            </li>
+                                                            <li><a href="#!brand"><i
+                                                                        class="fa-solid fa-caret-right"></i>Brand</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <h5 class="side-map_title">Gallery</h5>
+                                                        <ul class="side-map_about">
+                                                            <li><a href="#!gallery"><i
+                                                                        class="fa-solid fa-caret-right"></i>Supper
+                                                                    Car</a></li>
+                                                            <li><a href="#!gallery"><i
+                                                                        class="fa-solid fa-caret-right"></i>Antique
+                                                                    car</a></li>
+                                                            <li><a href="#!gallery"><i
+                                                                        class="fa-solid fa-caret-right"></i>Hatchbacks</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="footer-icon">
+                                                <div class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a>
+                                                </div>
+                                                <div class="icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                                </div>
+                                                <div class="icon"><a href=""><i class="fa-brands fa-twitter"></i></a>
+                                                </div>
+                                                <div class="icon"><a href=""><i class="fa-brands fa-youtube"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <!-- ----side-map----  -->
+
+
+
+
+
+
+                            <div class="footer__wrap-btn">
+                                <div class="container-fluid">
+                                    <div class="row row-footer">
+                                        <div class="col-5 wrap1">
+                                            <div></div>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <div class="footer-on_top">
+                                                <a href="" onclick="topFunction()" class="footer__btn">
+                                                    TOP
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-5 wrap2">
+                                            <div></div>
+                                        </div>
+                                        <div class="footer-cpr">
+                                            <h6>COPYRIGHT © 2022 WORDPRESS THEME. ALL RIGHTS RESERVED.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal " id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title modal-title-product">Car name</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="carouselExampleIndicators" class="carousel slide slide-img-top" data-bs-ride="carousel">
+                                <!-- <div class="carousel-indicators">
+
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                    </button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div> -->
+
+                                <div class="carousel-inner carousel-inner-top-img ">
+                                    <div class="carousel-item group list-group-image active">
+                                        <img src="..." class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item group list-group-image1">
+                                        <img src="..." class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item group list-group-image2">
+                                        <img src="..." class="d-block w-100 h-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div id="img-bottom" style="display: flex; width: 100%;">
+                                <div class="img-child group list-group-image active" style="width: 33.3%;">
+                                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" src="./assets/img/gallery/supper/s1.jpg" alt="" style="width: 100%; height: 100%;">
+                                </div>
+                                <div class="img-child group list-group-image1" style="width: 33.3%;">
+                                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2" src="./assets/img/gallery/supper/s3.jpg" alt="" style="width: 100%; height: 100%;">
+                                </div>
+                                <div class="img-child group list-group-image2" style="width: 33.3%;">
+                                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3" src="./assets/img/gallery/supper/s2.jpg" alt="" style="width: 100%; height: 100%;">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <h4>Product Details</h4>
+                            <div class="modal-content-Price">hello</div>
+                            <div class="modal-content-Kieudang">adk</div>
+                            <div class="modal-content-Dongco">adk</div>
+                            <div class="modal-content-Hopso">adk</div>
+                            <div class="modal-content-Dungtich">adk</div>
+                            <div class="modal-content-ChoNgoi">adk</div>
+                            <div class="modal-content-NamSx">adk</div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer modal-footer-css">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"></script>
+
+
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/js.js"></script>
+
+
+</body>
+
+</html>

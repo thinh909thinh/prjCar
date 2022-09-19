@@ -1,0 +1,341 @@
+/* ---element của quốc -----  */
+
+.quoc-css h2 {
+    color: white !important;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.quoc-css h6 {
+    color: #222732 !important;
+    font-size: 25px;
+}
+
+.element-section {
+    background-color: var(--color-hover);
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    position: relative;
+}
+
+.bg-laster {
+    background-color: #fff !important;
+}
+
+.element-section .elementor-container {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: #ccc; */
+}
+
+.elementor-column {
+    width: 100%;
+}
+
+.element-title {
+    margin: 50px 0px;
+}
+
+.element-title h1 {
+    font-weight: 600;
+}
+
+.element-title h1,
+.element-title h6 {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+
+/* -----TYPE OF -----  */
+
+.bg-typeof {
+    background-color: #222732;
+}
+
+.title-typeof {
+    color: #fff;
+    margin-left: 0px !important;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.elementor-column .title-center {
+    text-align: center;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.elementor-widget-wrap {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    /* background-color: #fff; */
+}
+
+.list-type__item {
+    display: inline-block;
+    width: 360px;
+    margin: 0 8px 48px;
+    padding-left: 23px;
+    text-align: center;
+    border-right: 1px #333 solid;
+    overflow: hidden;
+}
+
+.list-type__link {
+    text-decoration: none;
+    display: block;
+    width: 360px;
+    height: 210px;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+    border-left: 5px red solid;
+    transform: skewX(6deg);
+    color: #fff;
+}
+
+.list-type__link:hover {
+    background-color: red;
+    transition: ease 0.4s;
+    border-color: #dc2d13;
+}
+
+.list-type__info {
+    display: none;
+    color: #fff;
+}
+
+.list-type__link:hover .list-tupe-name {
+    display: none;
+}
+
+.list-type__link:hover .list-type__info {
+    display: block;
+}
+
+.list-type__inner {
+    margin-top: 10px;
+    transform: skewX(-6deg);
+}
+
+.decor-1,
+.decor-1:after {
+    width: 50px;
+    border-top: 1px solid #ccc;
+}
+
+.decor-1 {
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.decor-1:after {
+    content: "";
+    margin-top: 2px;
+    margin-left: 10px;
+    display: block;
+}
+
+
+/* ---message----  */
+
+.bg-message {
+    background-color: #f5f5f5;
+}
+
+.backgroud-message {
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    bottom: 0;
+    opacity: .14;
+    background-image: url(https://autozone.templines.org/elementor/dealer/wp-content/uploads/2021/12/7.jpeg);
+}
+
+.center-title>h6 {
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.span-input-q {
+    position: relative;
+}
+
+.mg-message {
+    margin-top: 30px;
+}
+
+.from-message {
+    margin: 50px 0px;
+}
+
+.rowq {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.colq-sm-6 {
+    width: 50%;
+}
+
+.mg-lr-15 {
+    margin: 0px 15px;
+}
+
+.col-xs-12q {
+    width: 100%;
+    margin: 0px 15px;
+}
+
+.input-messege-bq {
+    width: 100%;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 0px;
+    padding: 15px 20px;
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
+.input-messege-bq:focus-visible {
+    border: 0px !important;
+}
+
+.from-control {
+    width: 100%;
+    border: 0px;
+}
+
+.btn-message-q {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-send-q {
+    border: 0px;
+    background-color: #dc2d13;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 12px;
+    /* line-height: ; */
+}
+
+.btn-send-q:hover {
+    background-color: rgb(87, 87, 87);
+    transition: ease 0.3s;
+}
+
+
+/* -----  */
+
+.owl-carousel-q {
+    margin: 0px 10px;
+    margin-top: 70px;
+}
+
+.reviews {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0px;
+}
+
+.reviews-title {
+    text-transform: uppercase;
+}
+
+.decor_left {
+    float: left;
+    margin-left: 30px;
+}
+
+.reviews-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0px;
+    padding-left: 25px;
+    border-left: 5px solid rgb(114, 114, 114);
+    height: 30px;
+    line-height: 30px;
+}
+
+.item___customer {
+    height: 280px;
+    background-color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+.reviews_text_about {
+    font-size: 12px;
+    justify-content: center;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: rgb(114, 114, 114);
+    line-height: 1.5;
+}
+
+.reviews-user {
+    margin: 20px 0px;
+}
+
+.user_img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user_img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews-user {
+    display: flex;
+    margin-left: 30px;
+}
+
+.reviews_inner {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-user,
+.reviews_category {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.name-user {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.reviews_category {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.reviews:after {
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    font: normal normal normal 39px/1 FontAwesome;
+    color: rgba(34, 34, 34, .06);
+    content: '\f10e';
+}
